@@ -71,36 +71,7 @@ const RegisterStudent = () => {
           <input type="number" className="form-control" min="0" max="100" />
         </div>
 
-        <div className="col-12">
-          <label className="form-label d-block">
-            Post Graduation Completed?
-          </label>
-
-          <div className="form-check form-check-inline">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="pg"
-              id="yes"
-            />
-            <label className="form-check-label" htmlFor="yes">
-              Yes
-            </label>
-          </div>
-
-          <div className="form-check form-check-inline">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="pg"
-              id="no"
-              defaultChecked
-            />
-            <label className="form-check-label" htmlFor="no">
-              No
-            </label>
-          </div>
-        </div>
+        
 
         <div className="col-md-6">
           <label className="form-label">PG Degree</label>
