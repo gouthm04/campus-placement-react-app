@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import NavBar from "./NavBar";
 
 const ViewStudent = () => {
     const [data,changeData] = useState([])
@@ -19,6 +20,8 @@ const ViewStudent = () => {
         },[]
     )
   return (
+    <>
+    <NavBar/>
     <div className="container mt-4">
       <div className="row">
         <div className="col-12">
@@ -61,6 +64,7 @@ const ViewStudent = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

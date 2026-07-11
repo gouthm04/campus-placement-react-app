@@ -5,12 +5,22 @@ import RegisterStudent from './components/RegisterStudent'
 import SearchStudent from './components/SearchStudent'
 import DeleteStudent from './components/DeleteStudent'
 import ViewStudent from './components/ViewStudent'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    <ViewStudent/>
+    <>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<RegisterStudent/>}/>
+            <Route path='/delete' element={<DeleteStudent/>}/>
+            <Route path='/search' element={<SearchStudent/>}/>
+            <Route path='/view' element={<ViewStudent/>}/>
+          </Routes>
+        </BrowserRouter>
+      </>
     </>
       )
 }
