@@ -1,8 +1,11 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 const RegisterStudent = () => {
   return (
-    <div className="container mt-4">
+    <>
+    <NavBar/>
+        <div className="container mt-4">
       <h2 className="text-center mb-4">Campus Placement Registration</h2>
 
       <div className="row g-3">
@@ -96,6 +99,7 @@ const RegisterStudent = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
