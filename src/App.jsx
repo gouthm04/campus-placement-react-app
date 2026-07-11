@@ -4,12 +4,13 @@ import './App.css'
 import RegisterStudent from './components/RegisterStudent'
 import SearchStudent from './components/SearchStudent'
 import DeleteStudent from './components/DeleteStudent'
+import ViewStudent from './components/ViewStudent'
 
 function App() {
 
   return (
     <>
-    <DeleteStudent/>
+    <ViewStudent/>
     </>
       )
 }
